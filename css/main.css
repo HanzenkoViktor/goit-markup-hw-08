@@ -609,6 +609,7 @@ main {
 }
 
 .modal {
+  z-index: 1001;
   max-width: 450px;
   max-width: 609px;
   position: absolute;
@@ -721,9 +722,14 @@ main {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .form__title {
+    line-height: 1.15;
+  }
 }
 
 .form__field {
@@ -824,9 +830,15 @@ main {
 .check-title {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1, 16;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .check-title {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-send__btn {
